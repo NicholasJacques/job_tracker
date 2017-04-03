@@ -1,7 +1,11 @@
 FactoryGirl.define do
-  
+
   factory :company do
-    name "ESPN"
+    name
+  end
+
+  sequence :name do |n|
+    "#{n} Title"
   end
 
   factory :job do
