@@ -24,5 +24,10 @@ FactoryGirl.define do
   sequence :title do |n|
     "#{n} Title"
   end
+
+  factory :comment do
+    content "This job sucks!"
+  end
+
 end
 

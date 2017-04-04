@@ -1,1 +1,10 @@
 <h1>Category: <%= @category.title %></h1>
+
+<ul>
+  <% @category.jobs.each do |job| %>
+    <li>
+      <strong><%= link_to job.title, company_job_path(job.company, job) %></strong>, 
+      <%= job.company.name %>
+    </li>
+  <% end %>
+</ul>
