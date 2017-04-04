@@ -5,7 +5,7 @@ FactoryGirl.define do
   end
 
   sequence :name do |n|
-    "#{n} Title"
+    "#{n} Name"
   end
 
   factory :job do
@@ -14,5 +14,15 @@ FactoryGirl.define do
     level_of_interest 90
     city              "Denver"
     company
+    category
+  end
+
+  factory :category do
+    title
+  end
+
+  sequence :title do |n|
+    "#{n} Title"
   end
 end
+
