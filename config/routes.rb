@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   end
 
   resources :categories
+
+  get 'jobs' => 'jobs#root'
 end
